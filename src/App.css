@@ -10,7 +10,11 @@ SITE STYLES
 *******************/
 
 html {
-  background-color: grey;
+  background-color: #a1351a;
+}
+
+.top-page-item {
+  margin-top: 6em;
 }
 
 /******************
@@ -21,38 +25,42 @@ TOPBAR STYLES
 }
 
 .menu-link {
-  color: white;
-  cursor: pointer;
   display: inline-block;
   float: right;
   margin: 5.5vh 0;
   text-align: center;
-  transition: 1s;
   width: 7vw;
-
 }
 
-.menu-link:hover {
+.menu-anchor{
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.menu-anchor:hover {
   color: rgb(26,161,136);
 }
 
-.menu-link:hover::before {
+.menu-anchor:hover::before {
   animation: menu-slide-in-left 1s;
   animation-fill-mode: forwards;
   content: '{ ';
   display: inline-block;
-  position: relative;
   left: -7px;
   opacity: 0;
+  position: relative;
 }
-.menu-link:hover::after {
+.menu-anchor:hover::after {
   animation: menu-slide-in-right 1s;
   animation-fill-mode: forwards;
   content: ' }';
   display: inline-block;
+  opacity: 0;
   position: relative;
   right: -7px;
-  opacity: 0;
 }
 
 .nameContainer {
@@ -70,6 +78,15 @@ TOPBAR STYLES
   line-height: .8em;
   position: absolute;
   top: 12px;
+}
+
+.nametext > a {
+  color: white;
+  text-decoration: none;
+}
+
+.selected-menu-item {
+  color: rgb(26,161,136);
 }
 
 .topbar {
@@ -146,6 +163,33 @@ MAIN BANNER STYLES
 }
 
 /******************
+ABOUT PAGE STYLES
+*******************/
+.about-content {
+  margin-top: 6em;
+}
+
+.about-picture {
+  box-shadow: 0 0 2px 2px black;
+  position: relative;
+  float: left;
+  height: 20em;
+  margin: 0 2vw 2vh 2vw;
+  object-fit: cover;
+  width: 50%;
+}
+
+.about-text {
+  font-family: var(--site-text-font);
+  margin-top: 2vh;
+}
+
+.about-title {
+  font-family: var(--site-header-font);
+  text-align: center;
+}
+
+/******************
 SLIDE IN ITEMS STYLES
 *******************/
 
@@ -172,18 +216,18 @@ SLIDE IN ITEMS STYLES
   text-align: center;
 }
 
-.slide-in {
+.info-slide-in {
   opacity: 0;
   position: relative;
 }
 
-.slide-in-left {
+.info-slide-in-left {
   animation: info-slide-in-left 1.5s;
   animation-fill-mode: forwards;
   left: -2vw;
 }
 
-.slide-in-right {
+.info-slide-in-right {
   animation: info-slide-in-right 1.5s;
   animation-fill-mode: forwards;
   right: -2vw;
@@ -204,4 +248,64 @@ SLIDE IN ITEMS STYLES
 
 @keyframes info-slide-in-right {
   100% {opacity: 1; right: 0;}
+}
+
+/******************
+PROJECTS PAGE STYLES
+*******************/
+
+.project-description {
+  display: inline-block;
+  width: 75%;
+}
+
+.project-display {
+  margin: 2vh 2vw;
+}
+
+.project-image {
+  display: inline-block;
+  margin: 1vh 2vw;
+  width: 15%;
+}
+
+
+/******************
+ANIMATION STYLES
+*******************/
+
+.slide-in-left {
+  animation: slide-in-left 1.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: relative;
+  left: -2vw;
+}
+
+.slide-in-right {
+  animation: slide-in-right 1.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: relative;
+  right: -5vw;
+}
+
+
+
+.fade-in {
+  animation: fade-in 1.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slide-in-left{
+  100% {left: 0; opacity: 1;}
+}
+
+@keyframes slide-in-right{
+  100% {right: 0; opacity: 1;}
+}
+
+@keyframes fade-in {
+  100% {opacity: 1}
 }

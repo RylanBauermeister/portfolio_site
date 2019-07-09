@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlogSlider = (props) => {
     return <div className="slider-holder">
-      { props.isVisible && <div className={"slider" + (props.isVisible ? " slide-in slide-in-left" : "")}>
+      { props.isVisible && <div className={"slider" + (props.isVisible ? " info-slide-in info-slide-in-left" : "")}>
       <div className="slider-image slider-content">
         {props.isVisible ? "Hi!" : "Mrrr"}
       </div>
