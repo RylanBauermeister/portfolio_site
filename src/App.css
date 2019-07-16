@@ -10,11 +10,29 @@ SITE STYLES
 *******************/
 
 html {
-  background-color: #a1351a;
+  /* background-color: linear-gradient(left to right, #0c4d41, yellow) !important; */
+
+}
+
+#root {
+  /* background-color: #0c4d41; */
+    background-image: linear-gradient(to right, #0c4d41 , teal)
+}
+
+body {
+  /* background-color: #0c4d41; */
+    background-image: linear-gradient(to right, #0c4d41 , teal)
 }
 
 .top-page-item {
-  margin-top: 6em;
+  margin-top: 8em;
+    background-color: white;
+    border-radius: 30px 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 40px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+
 }
 
 /******************
@@ -27,7 +45,7 @@ TOPBAR STYLES
 .menu-link {
   display: inline-block;
   float: right;
-  margin: 5.5vh 0;
+  margin: 5vh 0;
   text-align: center;
   width: 7vw;
 }
@@ -90,6 +108,7 @@ TOPBAR STYLES
 }
 
 .topbar {
+  box-shadow: 1px 0 5px rgba(0,0,0,.75);
   position: fixed;
   background-color: black;
   height: 5em;
@@ -109,9 +128,12 @@ TOPBAR STYLES
 MAIN BANNER STYLES
 *******************/
 .banner-img {
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
   height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
+  width: 100%;
 }
 
 .banner-text {
@@ -149,6 +171,7 @@ MAIN BANNER STYLES
   height: calc(100vh - 4em);
   justify-content: center;
   margin-top: 5em;
+  width: 100%;
 }
 
 @keyframes banner-slide-in-left {
@@ -165,9 +188,6 @@ MAIN BANNER STYLES
 /******************
 ABOUT PAGE STYLES
 *******************/
-.about-content {
-  margin-top: 6em;
-}
 
 .about-picture {
   box-shadow: 0 0 2px 2px black;
@@ -181,11 +201,16 @@ ABOUT PAGE STYLES
 
 .about-text {
   font-family: var(--site-text-font);
-  margin-top: 2vh;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin: 2em;
 }
 
 .about-title {
   font-family: var(--site-header-font);
+  font-size: 3em;
+  margin-bottom: 1.5em;
+  margin-top: .5em;
   text-align: center;
 }
 
@@ -194,9 +219,12 @@ SLIDE IN ITEMS STYLES
 *******************/
 
 .slider {
+  background-color: white;
   display: flex;
   flex-direction: row;
-  margin: 10px 0;
+  margin: 45px 3vw;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
 }
 
 .slider-content {
@@ -205,6 +233,7 @@ SLIDE IN ITEMS STYLES
 
 .slider-holder {
   height: 20vh;
+  margin: 20px 0;
 }
 
 .slider-image {
@@ -222,15 +251,17 @@ SLIDE IN ITEMS STYLES
 }
 
 .info-slide-in-left {
-  animation: info-slide-in-left 1.5s;
+  animation: info-slide-in-right 1.5s;
   animation-fill-mode: forwards;
-  left: -2vw;
+  border-radius: 25px 0 0 25px;
+  right: -2vw;
 }
 
 .info-slide-in-right {
-  animation: info-slide-in-right 1.5s;
+  animation: info-slide-in-left 1.5s;
   animation-fill-mode: forwards;
-  right: -2vw;
+  border-radius: 0 25px 25px 0;
+  left: -2vw;
 }
 
 .slider-header{
@@ -269,6 +300,31 @@ PROJECTS PAGE STYLES
   width: 15%;
 }
 
+/******************
+CONTACT PAGE STYLES
+*******************/
+.contact-banner {
+  font-family: var(--site-header-font);
+  font-size: 4em;
+  text-align: center;
+}
+
+.contact-subheader {
+  font-family: var(--site-text-font);
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0 11vw;
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.social-links > a {
+  margin: 0 1vw;
+}
 
 /******************
 ANIMATION STYLES
