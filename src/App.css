@@ -24,6 +24,32 @@ body {
     background-image: linear-gradient(to right, #0c4d41 , teal)
 }
 
+.header-text {
+  font-family: var(--site-header-font);
+}
+
+.site-text {
+  font-family: var(--site-text-font);
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.subheader {
+  font-family: var(--site-text-font);
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0 11vw;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--site-header-font);
+  font-size: 3em;
+  margin-bottom: 1.5em;
+  margin-top: .5em;
+  text-align: center;
+}
+
 .top-page-item {
   margin-top: 8em;
     background-color: white;
@@ -306,14 +332,6 @@ CONTACT PAGE STYLES
 .contact-banner {
   font-family: var(--site-header-font);
   font-size: 4em;
-  text-align: center;
-}
-
-.contact-subheader {
-  font-family: var(--site-text-font);
-  font-size: 2em;
-  line-height: 1.2em;
-  margin: 0 11vw;
   text-align: center;
 }
 

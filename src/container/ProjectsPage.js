@@ -13,17 +13,22 @@ export default class ProjectsPage extends Component {
 
   generateDisplays() {
     return projectInfo.map((project, index) => {
-      return <ProjectDisplay direction={index%2 === 0 ? "right" : "left"}
-                              description={project.description}
-                              imgsrc="favicon.ico"
-                              name={project.name}
-                            />
+      return <div>
+        <hr/>
+        <ProjectDisplay direction={index%2 === 0 ? "right" : "left"}
+                                description={project.description}
+                                imgsrc={project.imgsrc || "favicon.ico"}
+                                link={project.link}
+                                name={project.name}
+                              />
+      </div>
 
     })
   }
 
   render(){
     return <div className="top-page-item fade-in">
+      <h1 className="title">My Projects</h1>
       {this.generateDisplays()}
     </div>
   }

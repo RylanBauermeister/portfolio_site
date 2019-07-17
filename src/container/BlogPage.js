@@ -10,6 +10,10 @@ export default class COMPONENT_NAME extends Component {
   }
 
   render(){
-    return <div className="fade-in top-page-item">Hi!</div>;
+    return <div className="fade-in top-page-item">
+      <h1 className="title">Read My Writing</h1>
+      <div className="subheader">This page is under construction while I get a Medium API key. For now, check out my blog directly via the link on the contact page!</div>
+
+    </div>;
   }
 }
