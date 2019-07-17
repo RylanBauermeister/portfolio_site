@@ -19,7 +19,7 @@ export default class ProjectDisplay extends Component {
     return <div className={"project-display slide-in-" + this.props.direction}>
       {this.props.direction === "left" && this.projectLink()}
       <div className="project-description site-text">
-        <h1 className="site-header">{this.props.name}</h1>
+        <h1 className="header-text">{this.props.name}</h1>
         <div>{this.props.description}</div>
       </div>
 
