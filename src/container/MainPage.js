@@ -5,7 +5,7 @@ import MainPageContent from './MainPageContent'
 const MainPage = (params) => {
     return <>
       <MainBanner/>
-      <MainPageContent/>
+      {/* <MainPageContent/> */}
     </>
 }
 

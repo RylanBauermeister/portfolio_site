@@ -24,6 +24,10 @@ body {
     background-image: linear-gradient(to right, #0c4d41 , teal)
 }
 
+.faded {
+  opacity: .2;
+}
+
 .header-text {
   font-family: var(--site-header-font);
 }
@@ -225,6 +229,23 @@ ABOUT PAGE STYLES
   width: 50%;
 }
 
+.about-resume {
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.about-tech-logo {
+  width: 33%;
+  height: 10vh;
+  margin: 10px 0;
+  object-fit: contain;
+}
+
+.about-technologies {
+  margin-top: 4em;
+}
+
 .about-text {
   font-family: var(--site-text-font);
   font-size: 1.25em;
@@ -235,10 +256,29 @@ ABOUT PAGE STYLES
 .about-title {
   font-family: var(--site-header-font);
   font-size: 3em;
-  margin-bottom: 1.5em;
   margin-top: .5em;
   text-align: center;
 }
+
+.tech-selector {
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  transition: .5s;
+  width: 25%;
+}
+
+.tech-selector-container {
+  margin: 1em 12.5% 2em 12.5%;
+  text-align: center;
+}
+
+.tech-selector:hover {
+  box-shadow: 0 0 10px 5px teal;
+  transition: 1s;
+}
+
 
 /******************
 SLIDE IN ITEMS STYLES
@@ -363,8 +403,6 @@ ANIMATION STYLES
   position: relative;
   right: -5vw;
 }
-
-
 
 .fade-in {
   animation: fade-in 1.75s;
