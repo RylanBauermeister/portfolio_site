@@ -62,7 +62,23 @@ body {
     margin-right: 5vw;
     padding: 40px;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+}
 
+@media only screen and (max-width: 700px){
+
+  .title {
+    font-size: 2em;
+  }
+  .top-page-item {
+    margin: 6em 5px;
+    padding: 0px;
+    width: calc(100vw - 10px);
+  }
+
+  .site-text {
+    font-size: 1em;
+    line-height: 1em;
+  }
 }
 
 /******************
@@ -147,6 +163,12 @@ TOPBAR STYLES
   z-index: 1;
 }
 
+@media only screen and (max-width: 700px){
+  .lastNameHeader, .firstNameHeader {
+    font-size: .5em;
+  }
+}
+
 @keyframes menu-slide-in-left {
   100% {left: -2px; opacity: 1;}
 }
@@ -202,6 +224,19 @@ MAIN BANNER STYLES
   justify-content: center;
   margin-top: 5em;
   width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+
+  .banner-text {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .banner-text {
+    font-size: 3em;
+  }
 }
 
 @keyframes banner-slide-in-left {
@@ -277,6 +312,27 @@ ABOUT PAGE STYLES
 .tech-selector:hover {
   box-shadow: 0 0 10px 5px teal;
   transition: 1s;
+}
+
+@media only screen and (max-width: 700px){
+  .about-picture {
+    float: none;
+    width: calc(100vw - 25px);
+  }
+
+  .about-text {
+    margin: 1em;
+    text-align: justify
+  }
+
+  .about-title {
+    font-size: 2.5em;
+  }
+
+  .tech-selector {
+    font-size: 1em;
+  }
+
 }
 
 
