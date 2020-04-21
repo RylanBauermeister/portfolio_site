@@ -15,7 +15,7 @@ const projectInfo = [
     name: "HomeSafe",
     imgsrc: "homesafe_logo.jpg",
     description: homeSafeDescription,
-    link: "https://homesafeseattle.com"
+    link: "https://github.com/RylanBauermeister/homesafe-frontend"
   },
   {
     name: "Mixxy",
