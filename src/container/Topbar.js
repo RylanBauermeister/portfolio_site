@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NameDisplay from '../component/NameDisplay'
 import MenuItem from '../component/MenuItem'
+import SidebarMenu from '../component/SidebarMenu'
 
 export default class Topbar extends Component {
 
