@@ -1,7 +1,7 @@
 const technologies = [
   {
     name: "Android",
-    logo: 'android-logo.png',
+    logo: 'Android-Logo.png',
     stack: ['mobile']
   },
   {
