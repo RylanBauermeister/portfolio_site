@@ -1,5 +1,10 @@
 const technologies = [
   {
+    name: "Android",
+    logo: 'android-logo.png',
+    stack: ['mobile']
+  },
+  {
     name: "AngularJS",
     logo: 'angularjs.jpg',
     stack: ['front','framework']
@@ -38,6 +43,11 @@ const technologies = [
     name: "Javascript",
     logo: 'js.png',
     stack: ['front']
+  },
+  {
+    name: "Kotlin",
+    logo: 'kotlin.png',
+    stack: ['front', 'back']
   },
   {
     name: "Node",
