@@ -58,13 +58,13 @@ const projectInfo = {
     },
     {
       name: "TableSafe",
-      imgsrc: "tablesafe_logo.jpeg",
+      imgsrc: "tablesafe_logo.jpg",
       description: tableSafeDescription,
       link: "https://madmobile.com/tablesafe/"
     },
     {
       name: "Skillmation",
-      imgsrc: "skillmation_logo.jpeg",
+      imgsrc: "skillmation_logo.jpg",
       description: skillmationDescription,
       link: "https://www.skillmation.org/"
     },
