@@ -15,13 +15,12 @@ html {
 }
 
 #root {
-  /* background-color: #0c4d41; */
-    background-image: linear-gradient(to right, #0c4d41 , teal)
+    background-image: linear-gradient(to right, #0c4d41 , teal);
+    padding-bottom: 5vw;
 }
 
 body {
-  /* background-color: #0c4d41; */
-    background-image: linear-gradient(to right, #0c4d41 , teal)
+    background-image: linear-gradient(to right, #0c4d41 , teal);
 }
 
 .faded {

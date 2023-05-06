@@ -11,8 +11,16 @@ export default class ProjectsPage extends Component {
     }
   }
 
-  generateDisplays() {
-    return projectInfo.map((project, index) => {
+  generateWorkProjectDisplays() {
+    return this.generateProjects('workProjectInfo')
+  }
+
+  generateSchoolProjectDisplays() {
+    return this.generateProjects('schoolProjectInfo')
+  }
+
+  generateProjects(project) {
+    return projectInfo[project].map((project, index) => {
       return <div>
         <hr/>
         <ProjectDisplay direction={index%2 === 0 ? "right" : "left"}
@@ -22,14 +30,16 @@ export default class ProjectsPage extends Component {
                                 name={project.name}
                               />
       </div>
-
     })
   }
 
   render(){
     return <div className="top-page-item fade-in">
-      <h1 className="title">My Projects</h1>
-      {this.generateDisplays()}
+      <h1 className="title">My Work Projects</h1>
+      {this.generateWorkProjectDisplays()}
+      <br/>
+      <h1 className="title">My School Projects</h1>
+      {this.generateSchoolProjectDisplays()}
     </div>
   }
 }
