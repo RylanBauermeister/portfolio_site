@@ -70,7 +70,7 @@ const projectInfo = {
     },
     {
       name: "LabKey",
-      imgsrc: "labkey_logo.avif",
+      imgsrc: "labkey_logo.png",
       description: labkeyDescription,
       link: "https://www.labkey.com/"
     }
