@@ -9,11 +9,6 @@
 SITE STYLES
 *******************/
 
-html {
-  /* background-color: linear-gradient(left to right, #0c4d41, yellow) !important; */
-
-}
-
 #root {
     background-image: linear-gradient(to right, #0c4d41 , teal);
     padding-bottom: 5vw;
@@ -88,7 +83,6 @@ TOPBAR STYLES
 }
 
 .menu-link {
-  display: inline-block;
   float: right;
   margin: 5vh 0;
   text-align: center;
